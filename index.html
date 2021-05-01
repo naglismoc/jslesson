@@ -103,8 +103,8 @@
         console.log(6 + 0.000000001 * (21-6) );
         console.log(6 + 0.999999999 * (21-6) );
 
-        var min = 4;
-        var max = 25
+        let min = 4;
+        let max = 25;
 
         console.log(min + Math.floor(rnd * (1 + max - min) ));
         var pirmas ;
@@ -143,14 +143,30 @@
         while(true){
             var varas = 8;
         }
-        // greiciausiai varas kintamaji vis dar matysite;
+        // greiciausiai 'varas' kintamaji vis dar matysite;
 
         function(kintamasis){
 
         }
         */
+     
 
-        
+         min = 16;
+         max = 40;
 
+        let kintamasis1 = min + Math.floor(Math.random() * (1 + max - min) );
+        let kintamasis2 = min + Math.floor(Math.random() * (1 + max - min) );
+
+        if(kintamasis1 > kintamasis2){
+            console.log((kintamasis1/kintamasis2).toFixed(2));
+        }else{
+            
+            console.log((kintamasis2/kintamasis1).toFixed(2));
+        }
+
+// teksto kabuciu tipai '', "", ``
+        let iterpinys = "miau"
+       console.log("kaciukas sako " + iterpinys +" kai nori valgyti");
+       console.log(`kaciukas sako ${iterpinys} kai nori valgyti`);
 
 </script>
