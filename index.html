@@ -169,4 +169,44 @@
        console.log("kaciukas sako " + iterpinys +" kai nori valgyti");
        console.log(`kaciukas sako ${iterpinys} kai nori valgyti`);
 
+        let knt1 =min + Math.floor(Math.random() * (1 + max - min) );
+
+        let knt2 = min + Math.floor(Math.random() * (1 + max - min) );
+
+        let knt3 = min + Math.floor(Math.random() * (1 + max - min) );
+
+        
+        if(knt1 != knt2 && knt1 != knt3 && knt2 != knt3){
+    
+            if (knt1 > knt2 && knt1 > knt3){ 
+                console.log(Math.max( knt2, knt3));
+            }
+                
+            if(knt2 > knt1 && knt2 > knt3) {
+                console.log(Math.max( knt1, knt3));
+            }
+
+            if(knt3 > knt1 && knt3 > knt2) {
+                console.log(Math.max( knt1, knt2)); 
+            }
+        }
+
+        if(knt1 == knt2 || knt1 == knt3 || knt2 == knt3){
+            console.log("sutapo");
+        }
+
+
+    min = 1;
+    max = 10;
+        let a = min + Math.floor(Math.random() * (1 + max - min) );
+        let b = min + Math.floor(Math.random() * (1 + max - min) );
+        let c = min + Math.floor(Math.random() * (1 + max - min) );
+
+        console.log(a,b,c);
+        // dvieju krastiniu ilgiu suma visada bus didesne uz 3 krastines ilgi
+
+        if(a + b > c && a + c > b && c + b > a){
+            console.log("turim trikampi");
+        }
+
 </script>
