@@ -13,7 +13,7 @@
 
 <script>
 
-    //kintamieji
+    //kintamieji +
     //salyginiai sakiniai
     //ciklai
     //funkcijos
@@ -100,14 +100,56 @@
 
         console.log(Math.floor(rnd * 5));
 
-        console.log(6 + Math.floor(0.000000001 * (21-6) ));
-        console.log(6 + Math.floor(0.999999999 * (21-6) ));
+        console.log(6 + 0.000000001 * (21-6) );
+        console.log(6 + 0.999999999 * (21-6) );
 
         var min = 4;
         var max = 25
 
         console.log(min + Math.floor(rnd * (1 + max - min) ));
         var pirmas ;
+
+        let teisingasKintamasis;
+        const KONSTANTAKAZKOKIA = 3.14;
+        console.log(KONSTANTAKAZKOKIA);
+        // KONSTANTAKAZKOKIA = 3.15; // taip negalima, ne ne ne :)
+        let galbut = 7 < 3; 
+        if(galbut){
+            console.log( "galbut sako kad yra tiesa");
+        }
+        rnd = Math.random();
+
+        if(rnd > 0.3 && rnd < 0.6){ // dvieju patikrinimu IR palyginimas (kai abu true) 
+            console.log(" tarp 0.3 ir 0.6");
+        }
+        if(rnd <= 0.3 || rnd >= 0.6){// dvieju patikrinimu ARBA palyginimas (kai bent vienas true)
+            console.log(" nera tarp 0.3 ir 0.6");
+        }
+
+        if(rnd > 0.5){ // jeigu tiesa daryk vienaip
+            console.log("daugiau uz 0.5");
+        }else{// o visais kitais atvejais kitaip.
+            console.log("maziau uz 0.5");
+        }
+
+/*
+        if(true){}
+        switch(true){}
+        for(true){
+            let kazkas = 7;
+        }
+        // kazkas kinamojo nera;
+
+        while(true){
+            var varas = 8;
+        }
+        // greiciausiai varas kintamaji vis dar matysite;
+
+        function(kintamasis){
+
+        }
+        */
+
         
 
 
